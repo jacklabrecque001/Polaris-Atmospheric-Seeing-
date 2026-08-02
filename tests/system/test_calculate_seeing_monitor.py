@@ -1,6 +1,6 @@
 """System test: calculate.py end-to-end seeing monitor (Seeing_monitor.pdf).
 
-Requires production CLI (not yet implemented — expected RED until tddimplementer):
+Requires production CLI (not yet implemented — expected RED until calculate.py exists):
 
     python calculate.py -constants <file> -data <directory>
 """
@@ -114,7 +114,7 @@ class CalculateSeeingMonitorSystemTest(unittest.TestCase):
     def test_calculate_cli_prints_zenith_corrected_seeing(self) -> None:
         self.assertTrue(
             CALCULATE_PY.is_file(),
-            "calculate.py missing — hand off to tddimplementer (red TDD expected)",
+            "calculate.py missing — implement the CLI to make this test pass (red TDD expected)",
         )
 
         env = os.environ.copy()
